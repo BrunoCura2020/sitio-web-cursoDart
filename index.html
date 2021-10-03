@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	
+	<title>Ejercicios de programación en Dart</title>
+</head>
+<body>
+	<div class="container"><!--VA A CONTENER TODA MI PAGINA, ABARCARA LA PAGINA COMPLETA-->
+		<nav class="row">
+			<!--sticky-top: navegacion pegajosa-->
+			<div class="col-lg-12 col-sm-12 col-md-12 sticky-top">
+				<ul class="nav nav-tabs bg-primary p-3" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#a" style="font-size: 20px; color: white;" >Consejos</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#b" style="font-size: 20px;  color: white;">Variables</a>	
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#c" style="font-size: 20px;  color: white;">Tipos de datos</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#d" style="font-size: 20px;  color: white;">Operadores</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#e" style="font-size: 20px;  color: white;">Control de flujo</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#f" style="font-size: 20px;  color: white;">Funciones</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#g" style="font-size: 20px;  color: white;">Excepciones</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#h" style="font-size: 20px;  color: white;">Genéricos</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link bg-primary" data-toggle="tab" href="#i" style="font-size: 20px;  color: white;">POO</a>
+					</li>
+				</ul>	
+			</div>	
+
+   			<div class="row"> <!--FILA DE LOS CONTENIDOS-->
+   				<!---->
+				<div class="col-lg-12 col-sm-12 col-md-12 tab-content">
+					<!--COLUMNAS DE LOS CONTENIDOS-->
+					<div id="a" class="container tab-pane">
+						<h2 class="p-4 badge badge-danger" style="border-radius: 20px; font-size:20px; ">Consejos</h2>
+						<p class="parrafo"><u>Nunca intentes aprender todo de un solo golpe</u>, lo ideal es estudiar
+           				un tema y darte el tiempo necesario para entenderlo bien.</p>
+
+           				<p class="parrafo"><u>Se constante</u>, es importante siempre estar aprendiendo algo nuevo, éste mundo es muy grande, así que te vas a entretener mucho.</p>
+
+           				<p p class="parrafo"><u>Adquiere lógica</u>, la lógica se puede obtener por medios de diferentes métodos, entre ellos están: haciendo ejercicios, programando mucho, inclusive leyendo.</p>
+
+
+           				<p class="parrafo">Cuando decidas por fin aprender un lenguaje de programación, siempre ten en cuenta <u>que es lo que quieres desarrollar.</u></p>
+
+           				<p class="parrafo">Una vez que tengas esa logíca de programador y logres aprender un lenguaje de programación, se te hará mucho más fácil pasarte a otro.</p>
+
+           				<p class="parrafo">Siempre busca las soluciones a tus problemas, lo puedes hacer en algún navegador, y si no lo encuentras no dudes en preguntar a alguien que sepa. Pero siempre
+           				<u>intenta saber porque se produce el error antes de salir a preguntar.</u></p>
+
+          		 		<p class="parrafo">Hay muchos rumores de que para programar hay que ser muy bueno en matemáticas o inglés, y esto es incorrecto. No necesariamente necesitas ser experto en esas ramas; <u>hay que saber lo básico</u>, y obvio si deseas algún día emigrar a otro país(Estados Unidos, Canadá, Nueva Zelanda, Reino Unido, etc) para tener mejores oportunidades como programador, en ese caso si te será muy útil el inglés.</p>
+					</div>
+
+					<div id="b" class="container tab-pane fade">
+
+						<!--Indicar que es una alerta, y darle color-->	
+						<div class="alert alert-info alert-dismissible">
+							<!--Para que tenga un icono para cerrar el cartel -->
+							<button type="button" class="close" data-dismiss="alert">
+								&times;
+							</button>
+								<h2>¿Qué es Dart?</h2>
+								<p style="font-size:23px;">Dart es un lenguaje de programación de Google, comenzó su desarrollo en el año 2010 y lo presentaron en el 2011. Se puede decir que Dart es de uso general, pero lo que lo hace especial, o yo lo veo así, es que podemos desarrollar aplicaciones moviles tanto para Android como IOS con un mismo código fuente acelerando la productividad.</p>
+						</div>	
+						<div class="row p-3">
+							<div class="col-lg-4 bg-danger p-4">
+
+								<h2 style="color: white;">Variables</h2>
+								<p style="color: white; font-size: 20px;">Cuando hablamos de variables nos estamos refiriendo a un espacio en memoria donde guardaremos algún tipo de dato. Dicho de otra forma, una variable va a ser quien represente nuestros datos en el programa que estamos programando.</p>
+							</div>
+	
+							<div class="col-lg-4 bg-success p-4">
+								<h2 style="color: white; font-size: 30px;">Tener en cuenta:</h2>
+								<ul>
+									<li style="color: white; font-size: 20px;">No puede tener un guión(-).</li style="color: white; font-size: 20px;">
+									<li style="color: white; font-size: 20px;">No puede comenzar con un número.</li style="color: white; font-size: 20px;">
+									<li style="color: white; font-size: 20px;">No se puede usar una palabra reservada del lenguaje para definir variables.</li>
+									<li style="color: white; font-size: 20px;">Evite usar latras latínas como la (Ñ).</li>
+									<
+								</ul>	
+							</div>
+
+							<div class="col-lg-4 bg-dark p-4">
+								<h2 style="color: white;">Ejemplo:</h2>
+								<p style="color: white; font-size: 20px;">
+									<code style="color: white">void</code> <code>main</code>(){<br><br>
+										<code>var</code> x = 10;<br><br>
+										<code>print</code>(x);
+									  <br><br>
+								}<br>
+								<code>var</code> es la palabra reservada del lenguaje para crear variables, <b>x</b> es el nombre de la variable, ademas usamos el signo <b>=</b> para asignar un valor a la variable <code>var</code>, adivinen cual es el valor, ¡exacto! <b>10</b> y por último lo imprimimos con la otra palabra reservada <code>print.</code> 	
+								</p>
+							</div>	
+
+							<div class="alert alert-info alert-dismissible">
+
+								<button type="button" class="close" data-dismiss="alert">
+								&times;
+								</button>
+								<h2>¿Palabras reservadas?</h2>
+								<p style="font-size:23px;">Cuando decimos <b>palabras reservadas</b> hablamos de aquellas que tienen un significado especial en el lenguaje y no se puede usar como identificadores.</p>
+							</div>	
+
+							<div class="col-lg-4 bg-success p-3">
+								<h2 style="color: white";>Recomendación</h2>
+								<P style="color: white; font-size: 20px;">No necesariamente hay que utilizar <code>var</code>, otra forma es escribiendo el tipo de dato, es más, se recomienda especificar de que tipo de datos serán nuestros valores.</P>
+							</div>
+
+							<div class="col-lg-4 p-3" style="background-color:	#1E90FF;">
+								<h2 style="color: white;">Final/Const</h2>
+								<p style="color:white; font-size: 20px;">Si usas <code>var</code> tendrás la posibilidad de cambiar el valor que ya existe en tu variable, pero si tu intensión no es modificarlo, puedes usar <code>final</code> o <code>const</code>. </p>
+							</div>
+						</div>		
+					</div>
+
+					<div id="c" class="container tab-pane fade">
+						<h2>Tipos de datos incorporados.</h2>
+						<p class="def">Dart tiene los siguientes tipos datos:</p>
+						<ol>
+							<li><a href="#int">Numbers</a></li>
+							<li><a href="#string">String</a></li>
+							<li><a href="#bool">Booleanos</a></li>
+							<li><a href="#list">List</a></li>
+							<li><a href="#set">Set</a></li>
+							<li><a href="#map">Map</a></li>
+						</ol>
+						<a name="int"><h2>Numbers:</h2></a>
+						<p class="def">En esta categoría nos encontramos con dos tipos: enteros(int) y decimales(double).</p>
+						<h3>Ejemplo:</h3>
+						<p style="background-color: black; color: white; padding: 10px;">
+							<code style="color: white">void</code> 
+							<code>main</code>(){<br><br>
+							<code>int</code> 			nombre_de_variable = 10;<br><br>
+							<code>print</code>(nombre_de_variable);<br><br>
+							}<br>
+						</p>
+
+						<p style="background-color: black; color: white; padding: 10px;">
+							<code style="color: white">void</code> 
+							<code>main</code>(){<br><br>
+							<code>double</code> 			nombre_de_variable = 10.2;<br><br>
+							<code>print</code>(nombre_de_variable);<br><br>
+							}<br>
+						</p>
+						<p class="def">También tenemos la posibilidad de tener una variable que permita almacenar tanto números enteros como decimales.</p>
+						<p style="background-color: black; color: white; padding: 10px;">
+							<code style="color: white">void</code> 
+							<code>main</code>(){<br><br>
+							<code>num</code> 			nombre_de_variable = 20;<br><br>
+							<code>print</code>(nombre_de_variable);<br><br>
+							}<br>
+						</p>
+						<p style="background-color: black; color: white; padding: 10px;">
+							<code style="color: white">void</code> 
+							<code>main</code>(){<br><br>
+							<code>num</code> 			nombre_de_variable = 20.5;<br><br>
+							<code>print</code>(nombre_de_variable);<br><br>
+							}<br>
+						</p>
+						<a name="string"><h2>String:</h2></a>
+						<p class="def">Éste almacena cadenas de texto; a diferencia del tipo de dato anterior, si o si las cadenas deben ir dentro de unas comillas sin importar si son comillas dobles o simples.</p>
+						<p style="background-color: black; color: white; padding: 10px;">
+							<code style="color: white">void</code> 
+							<code>main</code>(){<br><br>
+							<code>String</code> 			nombre_de_variable1 = "¡Hola!, ésta es una cadena de texto dentro de unas comillas dobles.";<br><br>
+							<code>String</code> 			nombre_de_variable2 = '¡Hola!, ésta es una cadena de texto dentro de unas comillas simples.';<br><br>
+							<code>print</code>(nombre_de_variable1);<br>
+							<code>print</code>(nombre_de_variable2);<br>
+							<br>
+							}<br>
+						</p>
+						<div class="alert alert-info alert-dismissible">
+							<button type="button" class="close" data-dismiss="alert">x</button>	
+							<h4>¡¡Estén atentos a esto!!</h4>
+							<p>Para decirle al programa que la variable va a ser de tipo cadena, siempre pero siempre debemos escribir <code>String</code> con la S en mayúscula.</p>
+						</div>
+						<p class="def">Dart nos permite usar comillas triples para hacer una cadenas de texto que ocupe más de una línea.</p>
+						<p style="background-color: black; color: white; padding: 10px;">
+						<code style="color: white">void</code> 
+						<code>main</code>(){<br><br>
+						<code>String</code> 			nombre_de_variable = """<br>¡Hola!, ésta es una cadena de texto <br> que tiene tres comillas,<br>
+						así que permite escribir en más de una línea.""";<br><br>
+						<code>print</code>(nombre_de_variable);<br>
+						<br>
+						}<br>
+						</p>
+
+						<a name="bool"><h2>bool:</h2></a>
+						<p class="def">Cuando hablamos de Booleanos nos estamos refiriendo a dos tipos: true(verdadero) y false(falso). También son muy usados para diferentes tareas como la toma de decisiones dentro de cualquier programa.</p> 
+						
+						<a name="list"><h2>List:</h2></a>
+						<p class="def">La lista es la colección más basica que podemos ver, pero también muy importante; consiste en tener en una misma variable un conjunto de elementos encerrado entre corchete y cada elemento separado por una coma.</p> 
+						<p style="background-color: black; color: white; padding: 10px;">
+
+						<code style="color: white">void</code> 
+						<code>main</code>(){<br><br>
+						<code>var </code>nombre_de_variable = [1, 2, 3, 4, 5]; <br><br>
+						<code>print</code>(nombre_de_variable);<br>
+						<br>
+						}<br>
+						</p>
+
+						<p class="def">No necesariamente tiene que ser de tipo entero. ¡¡Mira los siguientes ejemplos!!.</p>
+
+						<p style="background-color: black; color: white; padding: 10px;">
+
+						<code style="color: white">void</code> 
+						<code>main</code>(){<br><br>
+						<code>List</code><<code>String</code>> lista_de_cadenas = ["a", "b", "c"]; <br><br>
+						<code>print</code>(lista_de_cadenas);<br>
+						<br>
+						}<br>
+						</p>
+
+						<p style="background-color: black; color: white; padding: 10px;">
+
+						<code style="color: white">void</code> 
+						<code>main</code>(){<br><br>
+						<code>List</code><<code>int</code>> lista_de_enteros = [1, 2, 3]; <br><br>
+						<code>print</code>(lista_de_enteros);<br>
+						<br>
+						}<br>
+						</p>
+
+						<p style="background-color: black; color: white; padding: 10px;">
+
+						<code style="color: white">void</code> 
+						<code>main</code>(){<br><br>
+						<code>List</code><<code>dynamic</code>> lista_dinamica = [1, "a", <code style="color: orange">true</code>]; <br><br>
+						<code>print</code>(lista_dinamica);<br>
+						<br>
+						}<br>
+						</p>
+						<p class="def">Otra cosa interesante que podemos hacer con las listas es almacenar en una lista otra lista, a esto lo podemos llamar "lista de listas".</p>
+
+						<p style="background-color: black; color: white; padding: 10px;">
+
+						<code style="color: white">void</code> 
+						<code>main</code>(){<br><br>
+						<code>List</code><<code>dynamic</code>> lista_de_listas = [1, 2, 3, ["a", "b", "c", [<code style="color: orange"> true, false</code>]]]; <br><br>
+						<code>print</code>(lista_de_listas);<br>
+						<br>
+						}<br>
+						</p>
+
+						<a name="set"><h2>Set:</h2></a>
+						<p class="def">Los Set también es una colección de elementos en una misma variable, pero a diferencia de las listas, en este no se permite elementos repetidos.</p>
+
+						<p style="background-color:black; color: white; padding: 10px;">
+
+						<code style="color: white">void</code> 
+						<code>main</code>(){<br><br>
+						<code>var</code> no_repite_elementos = <<code>dynamic</code>> {1, 2, 3, 4, 5, 1}; <br><br>
+						<code>print</code>(no_repite_elementos);<br>
+						<br>
+						}<br>
+						
+						</p>
+						<p class="def">El resultado será: {1, 2, 3, 4, 5}, porque como ya te mencioné anteriormente, los elementos no se pueden repetir. Y el editor sabrá cuando estas usando listas o sets porque en las listas se colocan los elementos entre corchetes, mientras que en los set se usan las llaves.</p>
+
+						<a name="map"> <h2>Map:</h2></a>
+						<p class="def">Los mapas a diferencia de los anteriores, consiste en una colección que tiene clave/valor. El usuario podrá ingresar al valor si imprimé la clave.</P>
+						<p style="background-color:black; color: white; padding: 10px;">
+						<code style="color: white">void</code> 
+						<code>main</code>(){<br><br>
+						<code>Map:</code><<code>String, dynamic</code>> miMapa = {"Dart":"Flutter"; "nacimiento":2011}; <br><br>
+						<code>print</code>(miMapa);<br>
+						<br>
+						<code>print</code>(miMapa["Dart"]);<br>
+						<br>
+						}<br>
+						</p>
+
+						<p class="def">Quiero que se den cuenta de algo, como ven he colocado dos tipos de datos, y lo hice porque el primero(String) representa el tipo de dato de la clave y el segundo va a representar el tipo de dato de los valores. Con eso quiero decir que, la clave si o si tiene que ser de tipo cadena y el valor puede ser de cualquier tipo, osea es dinámico. Y por último se puede ver dos print, aquél que tiene un corchete será quien muestre el valor de la clave y el otro mostrará el mapa completo. </p>
+
+						<p class="def" style="background-color: lightgray; padding: 10px;">Les aclaró algo en cuánto a las colecciones de elementos, yo solamente les di una pequeña introducción, si investigan más verán que es todo un mundo, encontrán lo que son los métodos por ejemplo, con los métodos podrás agregar elementos, eliminarlos, cambiar de posición, saber en que posición se encuentra, y un gran etc..</p>
+					</div>
+
+					<div id="d" class="container tab-pane active">
+						<h2>Operadores.</h2>
+						<h3>Operadores aritméticos:</h3>
+						<p class="def">Son los operadores más básico que podemos ver, nos permite realizar las operaciones típicas como sumar, restar, multiplicar, dividir o hasta obtener el resto de una división.</p>
+						<ol>
+							<li>+</li>
+						    <li>-</li>
+						    <li>*</li>
+ 						    <li>/</li>
+						    <li>%</li>		
+						</ol>
+						<h3>Operadores de igualdad y relacionales:</h3>
+						<table class="table">
+							<tr style="text-align:center;">
+								<th>==</th>
+								<th>!=</th>
+								<th>></th>
+								<th><</th>
+								<th>>=</th>
+								<th><=</th>							
+							</tr>
+							<tr style="text-align:center;">
+								<td>Comparación</td>
+								<td>No es igual</td>
+								<td>Mayor que..</td>
+								<td>Menor que..</td>
+								<td>Mayor o igual que..</td>
+								<td>Menor o igual que..</td>
+							</tr>
+						</table>
+						<div class="alert alert-info alert-dismissible">
+							<button type="button" class="close"  data-dismiss="alert">x</button>
+							<h2>¡¡Atención!!</h2>
+							<p>No confundan el = con el ==, el primero nos sirve para decirle que le estamos asignando un valor, y el segundo tiene la función de hacer comparaciones. Por ejemplo:<br>
+							int a = 10;<br>
+							int b = 20;<br>
+							print(a == b);<br>
+
+							false: porque a(10) no es igual a b(20);
+
+							</p>
+						</div>
+						
+            		</div> 
+					<div id="e" class="container tab-pane disabled">3</div>
+					<div id="f" class="container tab-pane disabled">4</div>
+					<div id="g" class="container tab-pane disabled">5</div>
+					<div id="h" class="container tab-pane disabled">6</div>
+					<div id="i" class="container tab-pane disabled">7</div>
+					<div id=" " class="container tab-pane disabled">8</div>	
+				</div><!--FIN DE COLUMNAS DE LOS CONTENIDOS-->
+			</div><!--FIN DE LA FILA DE LOS CONTENIDOS-->	
+		</nav> <!--FIN DE LA NAVEGACIÓN-->	                
+	</div> <!--FIN DEL CONTAINER-->
+
+
+
+
+
+
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+</body>
+</html>
